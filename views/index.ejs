@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <style>
+        body {
+            background-image: url('https://source.unsplash.com/1600x900/?"<%= city %>"');
+        }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -16,13 +21,13 @@
           </form>
         </div>
         <div>
-          <h1>Weather in Santiago</h1>
+          <h1>Weather in <%= city %></h1>
         </div>
         <div>
-          <h2>12°C</h2>
+          <h2> <%= temp %></h2>
         </div>
         <div>
-          <h3><img src="" alt="" />Broken Clouds</h3>
+          <h3><img src="https://openweathermap.org/img/wn/<%= icon %>@2x.png" alt="" /><%= description %></h3>
         </div>
         <div>
           <p></p>

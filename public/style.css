@@ -1,0 +1,27 @@
+body {
+    background-image: url('https://source.unsplash.com/1600x900/?"World"');
+}
+
+.container {
+    height: 97dvh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.card {
+    padding: 30px;
+    padding-left: 30px;
+    width: 60vh;
+    background-color: rgba(156, 146, 146, 0.7);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.search {
+    margin: 0 60px;
+    display: grid;
+    place-content: center;
+    background-color: rgba(128, 128, 128, 0.479);
+}
