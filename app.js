@@ -30,8 +30,17 @@ app.post("/", function(req, res){
             const description = weatherData.weather[0].description;
             const name = weatherData.name;
             const icon = weatherData.weather[0].icon;
+            const humidity = weatherData.main.humidity;
+            const windSpeed = weatherData.wind.speed;
             
-           res.render("index.ejs", {city: name, temp: temp, icon: icon, description: description});
+           res.render("index.ejs", {
+                city: name, 
+                temp: temp, 
+                icon: icon, 
+                description: description, 
+                humidity: humidity, 
+                windSpeed: windSpeed
+            });
         });
     });
     console.log("Post request recieved");

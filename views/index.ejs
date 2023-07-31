@@ -24,14 +24,14 @@
           <h1>Weather in <%= city %></h1>
         </div>
         <div>
-          <h2> <%= temp %></h2>
+          <h2> <%= temp %>°C</h2>
         </div>
         <div>
-          <h3><img src="https://openweathermap.org/img/wn/<%= icon %>@2x.png" alt="" /><%= description %></h3>
+          <h3 class="description"><img src="https://openweathermap.org/img/wn/<%= icon %>@2x.png" alt="description" /><%= description %></h3>
         </div>
         <div>
-          <p></p>
-          <p></p>
+          <p>Humidity: <%= humidity %></p>
+          <p>Wind Speed: <%= windSpeed %> </p>
         </div>
       </div>
     </div>

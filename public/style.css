@@ -1,5 +1,7 @@
 body {
+    background-color: black;
     background-image: url('https://source.unsplash.com/1600x900/?"World"');
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .container {
@@ -13,15 +15,51 @@ body {
     padding: 30px;
     padding-left: 30px;
     width: 60vh;
-    background-color: rgba(156, 146, 146, 0.7);
+    background-color: #f0f5f9c8;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
+    color: #1E2022;
+}
+
+.card > div {
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .search {
-    margin: 0 60px;
+    margin: auto;
     display: grid;
     place-content: center;
-    background-color: rgba(128, 128, 128, 0.479);
+}
+
+.search input {
+    padding: 0;
+    /* border: none; */
+    height: 34px;
+    width: 35vh;
+    border-radius: 20px;
+    background-color: #52616b7d;
+    text-align: center;
+}
+
+.search button {
+    /* border: none; */
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    background-color: #C9D6DF;
+}
+
+.description {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+div > p {
+    margin-bottom: 0vh;
 }
